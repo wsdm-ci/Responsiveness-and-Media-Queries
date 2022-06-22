@@ -386,6 +386,10 @@ input {
 }
 
 @media screen and (max-device-width: 375px) {
+  body {
+    background-image: url(bg-intro-mobile.png);
+    background-size: cover;
+  }
   h1 {
     font-size: 25px;
     color: white;
@@ -476,10 +480,12 @@ input {
   }
 
   .consent {
+    padding: 5px;
     color: hsl(246, 25%, 77%);
   }
   .consent a {
-    display: block;
+    /* padding: 0px; */
+    /* display: block; */
     text-decoration-line: none;
     color: red;
     font-weight: 600;
