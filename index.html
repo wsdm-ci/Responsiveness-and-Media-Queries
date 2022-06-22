@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" class="css" />
   </head>
@@ -29,42 +32,53 @@
           <span class="light">then $20/mo. thereafter</span>
         </p>
         <form data-u="Awesome">
-          <div class="hi" data-erro="this can't be empty">
+          <div class="input-container" data-error="First name cannot be empty">
             <input
               type="text"
               placeholder="First Name"
-              class="solved er"
+              name="firstname"
               required
             />
             <div class="error">First name cannot be empty</div>
           </div>
-          <div class="hi" data-erro="this can't be empty">
+          <div class="input-container" data-error="Last name cannot be empty">
             <input
               type="text"
               placeholder="Last Name"
-              class="solved er"
+              name="lastname"
               required
             />
             <div class="error">Last name cannot be empty</div>
           </div>
-          <div class="hi" data-erro="this can't be empty">
+          <div
+            class="input-container"
+            data-error="Looks like this is not an email"
+          >
             <input
               type="email"
               placeholder="Email address"
-              class="solved er"
+              name="email"
               required
             />
-            <div class="error">Email used must be correct</div>
+            <div class="error">Looks like this is not an email</div>
+          </div>
+          <div class="input-container" data-error="Password cannot be empty">
+            <input
+              type="password"
+              placeholder="Password"
+              required
+              name="password"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+            />
+            <div class="error">Password cannot be empty</div>
           </div>
           <div>
-          <input type="password" placeholder="Password" required class="pa" />
+            <button type="submit" enterkeyhint="send" value="claim_free_trial">
+              CLAIM YOUR FREE TRIAL
+            </button>
           </div>
-          <div>
-          <button type="submit" enterkeyhint="send" value="" class="cta">
-            CLAIM YOUR FREE TRIAL
-          </button>
-          </div>
-        
+
           <!--  -->
           <p class="consent">
             By clicking this button, you are agreeing to our
