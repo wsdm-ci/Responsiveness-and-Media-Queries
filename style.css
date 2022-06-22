@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 body {
   background-color: hsl(0, 100%, 74%);
@@ -13,6 +14,7 @@ body {
 /*D:focuswithin:required:invalid .error {
   display: block;
 }*/
+
 h1 {
   font-size: 50px;
   color: white;
@@ -21,7 +23,7 @@ p {
   font-size: 18px;
   color: white;
   font-weight: 400;
-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
 }
 
 main {
@@ -42,11 +44,11 @@ main {
   /* border: 2px solid; */
   margin: 0%;
 }
-form{
-    background-color: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0px 10px 1px 0px rgba(51, 49, 49, 0.233);
+form {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 1px 0px rgba(51, 49, 49, 0.233);
 }
 .topleft {
   margin-bottom: 30px;
@@ -61,25 +63,114 @@ form{
   /* margin-bottom: 20px; */
   background-color: hsl(248, 32%, 49%);
 }
-.light {
-  font-weight: ;
-}
 .right div {
   margin: 20px;
   /* border: 1px solid; */
 }
 input {
-    border-radius: 5px;
+  font-family: "Poppins";
+  border-radius: 5px;
   width: 100%;
   padding: 20px;
   border-style: solid;
-  border-width: 1px;
-  border-color: rgb(209, 209, 209);
+  border-width: 0.5px;
+  border-color: hsl(246, 25%, 77%);
   /* border: none; */
   /* border: 0.5px lightslategray; */
   /* border: 0.2px solid; */
 }
 .right button {
+  border: none;
+  box-shadow: inset 0px -5px 1px 0px rgba(51, 49, 49, 0.233);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 20px;
+  width: 100%;
+  background-color: hsl(154, 59%, 51%);
+}
+
+.consent {
+  color: hsl(246, 25%, 77%);
+}
+.consent a {
+  text-decoration-line: none;
+  color: red;
+  font-weight: 600;
+}
+.topleft span {
+  font-weight: 200;
+  color: rgb(248, 248, 248);
+}
+
+@media screen and (min-device-width: 1441px) {
+  h1 {
+    font-size: 50px;
+    color: white;
+  }
+  p {
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+
+  main {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    height: 95vh;
+    align-items: center;
+  }
+  .left {
+    margin: 8em;
+    margin-left: 0;
+  }
+  .right {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    /* border: 2px solid; */
+    margin: 0%;
+  }
+  form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 1px 0px rgba(51, 49, 49, 0.233);
+  }
+  .topleft {
+    margin-bottom: 30px;
+    box-shadow: 0px 10px 1px 0px rgba(51, 49, 49, 0.233);
+    /* width: 80%; */
+    font-size: 18px;
+    padding: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+    /* margin-bottom: 20px; */
+    background-color: hsl(248, 32%, 49%);
+  }
+  .right div {
+    margin: 20px;
+    /* border: 1px solid; */
+  }
+  input {
+    font-family: "Poppins";
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: hsl(246, 25%, 77%);
+    /* border: none; */
+    /* border: 0.5px lightslategray; */
+    /* border: 0.2px solid; */
+  }
+  .right button {
     border: none;
     box-shadow: inset 0px -5px 1px 0px rgba(51, 49, 49, 0.233);
     border-radius: 5px;
@@ -87,20 +178,316 @@ input {
     font-weight: 600;
     font-size: 18px;
     letter-spacing: 1px;
-  padding: 20px;
-  width: 100%;
-  background-color: hsl(154, 59%, 51%);
-}
+    padding: 20px;
+    width: 100%;
+    background-color: hsl(154, 59%, 51%);
+  }
 
-.consent{
+  .consent {
     color: hsl(246, 25%, 77%);
-}
-.consent a{
+  }
+  .consent a {
     text-decoration-line: none;
     color: red;
     font-weight: 600;
-}
-.topleft span{
+  }
+  .topleft span {
     font-weight: 200;
     color: rgb(248, 248, 248);
+  }
+}
+
+@media screen and (min-device-width: 376px) and (max-device-width: 1440px) {
+  h1 {
+    font-size: 45px;
+    color: white;
+  }
+  p {
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+    align-items: center;
+  }
+  .left {
+    margin: 5em;
+    width: 75%;
+    /* margin-left: 0; */
+  }
+  .right {
+    /* width: 100%; */
+    align-items: center;
+    text-align: center;
+    /* border: 2px solid; */
+    margin: auto;
+  }
+  form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 1px 0px rgba(51, 49, 49, 0.233);
+  }
+  .topleft {
+    margin-bottom: 25px;
+    box-shadow: 0px 10px 1px 0px rgba(51, 49, 49, 0.233);
+    /* width: 80%; */
+    font-size: 15px;
+    padding: 30px;
+    font-weight: 600;
+    border-radius: 10px;
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+    /* margin-bottom: 20px; */
+    background-color: hsl(248, 32%, 49%);
+  }
+  .right div {
+    margin: 15px;
+    /* border: 1px solid; */
+  }
+  input {
+    font-family: "Poppins";
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: hsl(246, 25%, 77%);
+    /* border: none; */
+    /* border: 0.5px lightslategray; */
+    /* border: 0.2px solid; */
+  }
+  .right button {
+    border: none;
+    box-shadow: inset 0px -5px 1px 0px rgba(51, 49, 49, 0.233);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 20px;
+    width: 100%;
+    background-color: hsl(154, 59%, 51%);
+  }
+
+  .consent {
+    padding: 5px;
+    color: hsl(246, 25%, 77%);
+    font-size: 16px;
+  }
+  .consent a {
+    text-decoration-line: none;
+    color: red;
+    font-weight: 600;
+  }
+  .topleft span {
+    font-weight: 200;
+    color: rgb(248, 248, 248);
+  }
+}
+
+@media screen and (min-device-width: 1441px) {
+  h1 {
+    font-size: 50px;
+    color: white;
+  }
+  p {
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+
+  main {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    height: 95vh;
+    align-items: center;
+  }
+  .left {
+    margin: 8em;
+    margin-left: 0;
+  }
+  .right {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    /* border: 2px solid; */
+    margin: 0%;
+  }
+  form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 1px 0px rgba(51, 49, 49, 0.233);
+  }
+  .topleft {
+    margin-bottom: 30px;
+    box-shadow: 0px 10px 1px 0px rgba(51, 49, 49, 0.233);
+    /* width: 80%; */
+    font-size: 18px;
+    padding: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+    /* margin-bottom: 20px; */
+    background-color: hsl(248, 32%, 49%);
+  }
+  .right div {
+    margin: 20px;
+    /* border: 1px solid; */
+  }
+  input {
+    font-family: "Poppins";
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: hsl(246, 25%, 77%);
+    /* border: none; */
+    /* border: 0.5px lightslategray; */
+    /* border: 0.2px solid; */
+  }
+  .right button {
+    border: none;
+    box-shadow: inset 0px -5px 1px 0px rgba(51, 49, 49, 0.233);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 20px;
+    width: 100%;
+    background-color: hsl(154, 59%, 51%);
+  }
+
+  .consent {
+    color: hsl(246, 25%, 77%);
+  }
+  .consent a {
+    text-decoration-line: none;
+    color: red;
+    font-weight: 600;
+  }
+  .topleft span {
+    font-weight: 200;
+    color: rgb(248, 248, 248);
+  }
+}
+
+@media screen and (max-device-width: 375px) {
+  h1 {
+    font-size: 25px;
+    color: white;
+  }
+  p {
+    font-size: 10px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    width: 85%;
+
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 95vh;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    justify-content: center;
+    /* justify-content: center; */
+  }
+  .left {
+    width: 100%;
+    margin: 5px;
+    /* margin-bottom: 50px; */
+    /* margin-left: 0; */
+    /* height: 100%; */
+  }
+  .right {
+    /* width: 100%; */
+    align-items: center;
+    text-align: center;
+    /* border: 2px solid; */
+    margin: 5px;
+    margin-top: 30px;
+  }
+  form {
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 1px 0px rgba(51, 49, 49, 0.233);
+  }
+  .topleft {
+    /* margin-bottom: 30px; */
+    box-shadow: 0px 5px 1px 0px rgba(51, 49, 49, 0.233);
+    /* width: 80%; */
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+    /* margin-bottom: 20px; */
+    background-color: hsl(248, 32%, 49%);
+  }
+  .right div {
+    margin: 15px;
+    /* border: 1px solid; */
+  }
+  input {
+    font-family: "Poppins";
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px;
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: hsl(246, 25%, 77%);
+    /* border: none; */
+    /* border: 0.5px lightslategray; */
+    /* border: 0.2px solid; */
+  }
+  .right button {
+    border: none;
+    box-shadow: inset 0px -3px 1px 0px rgba(51, 49, 49, 0.233);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 15px;
+    /* width: 100%; */
+    background-color: hsl(154, 59%, 51%);
+  }
+
+  .consent {
+    color: hsl(246, 25%, 77%);
+  }
+  .consent a {
+    display: block;
+    text-decoration-line: none;
+    color: red;
+    font-weight: 600;
+  }
+  .topleft span {
+    display: block;
+    font-size: 10px;
+    font-weight: 200;
+    color: rgb(248, 248, 248);
+  }
 }
